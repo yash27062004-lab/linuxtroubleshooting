@@ -1,0 +1,18 @@
+Commands:
+ps aux
+ps -el
+pstree
+top
+htop
+
+Investigation Flow:
+
+1. Identify zombie processes.
+2. Find the parent PID (PPID).
+3. Inspect the parent process.
+4. Restart or terminate the parent if required.
+5. Verify zombie cleanup.
+
+Learning:
+A zombie process has already exited.
+It remains in the process table until the parent collects its exit status.

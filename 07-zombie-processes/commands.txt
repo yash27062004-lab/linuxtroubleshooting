@@ -1,0 +1,8 @@
+ps aux | grep Z
+ps -el | grep Z
+ps -eo pid,ppid,state,cmd | grep Z
+pstree -p
+top
+htop
+kill -15 PPID
+kill -9 PPID
