@@ -1,0 +1,22 @@
+Commands:
+ps aux
+ps aux --sort=-%cpu
+ps aux --sort=-%mem
+pgrep
+pstree
+top
+htop
+kill
+pkill
+
+Investigation Flow:
+
+1. Identify abnormal resource usage.
+2. Find the process PID.
+3. Determine the parent process.
+4. Verify whether it is expected.
+5. Gracefully terminate if necessary.
+
+Learning:
+Never start with kill -9.
+Always identify the owner, parent process, and purpose first.

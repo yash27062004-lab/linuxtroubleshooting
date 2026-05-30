@@ -1,0 +1,12 @@
+ps aux
+ps aux --sort=-%cpu | head
+ps aux --sort=-%mem | head
+pgrep process_name
+pstree -p
+top
+htop
+kill -15 PID
+kill -9 PID
+pkill process_name
+renice
+nice
