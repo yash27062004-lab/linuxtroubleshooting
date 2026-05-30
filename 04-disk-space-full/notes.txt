@@ -1,0 +1,18 @@
+Commands:
+df -h
+du -sh /*
+du -sh /var/*
+find / -type f -size +100M
+find /var/log -type f
+
+Investigation Flow:
+
+1. Check filesystem utilization.
+2. Identify large directories.
+3. Locate large files.
+4. Verify if logs, backups, or temporary files are consuming space.
+5. Clean up safely.
+
+Learning:
+A full filesystem can cause application failures, service outages, and failed deployments.
+Never delete files without identifying ownership and purpose.

@@ -1,0 +1,9 @@
+df -h
+du -sh /*
+du -sh /var/*
+du -sh /home/*
+find / -type f -size +100M
+find /var/log -type f
+ls -lh
+ncdu
+lsof
