@@ -1,0 +1,12 @@
+Finding:
+Cron job existed and script was executable.
+
+Learning:
+Verify cron entry, permissions, script content, and output.
+
+
+
+
+
+
+

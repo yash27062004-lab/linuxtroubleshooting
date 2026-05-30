@@ -1,0 +1,6 @@
+crontab -l
+ls -l /usr/local/bin/backup.sh
+cat /usr/local/bin/backup.sh
+cat ~/backup_status.txt
+
+
