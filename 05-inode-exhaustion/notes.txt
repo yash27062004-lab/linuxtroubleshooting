@@ -1,0 +1,17 @@
+Commands:
+df -i
+find /var -type f | wc -l
+find /tmp -type f | wc -l
+find / -xdev -type f
+
+Investigation Flow:
+
+1. Check inode utilization.
+2. Identify directories containing large numbers of files.
+3. Verify whether logs, cache files, or temporary files are causing inode exhaustion.
+4. Remove unnecessary files.
+5. Recheck inode usage.
+
+Learning:
+Disk space and inodes are separate resources.
+A million small files can exhaust inodes while consuming very little disk space.

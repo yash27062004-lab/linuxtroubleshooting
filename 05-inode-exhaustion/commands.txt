@@ -1,0 +1,10 @@
+df -i
+find /var -type f | wc -l
+find /tmp -type f | wc -l
+find /home -type f | wc -l
+find / -xdev -type f
+du -sh
+ls -lah
+
+```
+```
