@@ -1,0 +1,19 @@
+Commands:
+free -h
+vmstat 1
+ps aux --sort=-%mem | head
+dmesg | grep -i oom
+journalctl -k | grep -i oom
+
+Investigation Flow:
+
+1. Check available memory and swap.
+2. Identify top memory-consuming processes.
+3. Look for OOM killer events.
+4. Verify whether memory pressure is ongoing.
+
+Learning:
+Linux uses free memory for caching.
+Low free memory alone is not enough to diagnose an issue.
+Always check for swap usage and OOM logs.
+

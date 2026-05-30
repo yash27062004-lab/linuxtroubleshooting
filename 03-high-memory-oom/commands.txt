@@ -1,0 +1,9 @@
+free -h
+vmstat 1
+ps aux --sort=-%mem | head
+top
+htop
+dmesg | grep -i oom
+journalctl -k | grep -i oom
+cat /proc/meminfo
+smem
