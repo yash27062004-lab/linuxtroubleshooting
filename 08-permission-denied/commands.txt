@@ -1,0 +1,11 @@
+ls -l
+ls -ld
+id
+groups
+chmod
+chmod 644 file
+chmod 755 directory
+chown user:user file
+getfacl file
+setfacl
+namei -l /path/to/file

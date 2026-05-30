@@ -1,0 +1,22 @@
+Commands:
+ls -l
+ls -ld
+id
+groups
+chmod
+chown
+getfacl
+setfacl
+
+Investigation Flow:
+
+1. Identify the affected file or directory.
+2. Check ownership.
+3. Verify permissions.
+4. Check user groups.
+5. Inspect ACLs if standard permissions look correct.
+6. Apply the minimum required fix.
+
+Learning:
+Permission issues are usually caused by incorrect ownership, group membership, permissions, or ACL rules.
+Avoid using chmod 777.
