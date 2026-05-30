@@ -1,0 +1,11 @@
+uptime
+top
+htop
+ps aux --sort=-%cpu | head
+top -H -p PID
+pgrep
+kill -15 PID
+kill -9 PID
+renice
+nice
+

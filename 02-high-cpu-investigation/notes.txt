@@ -1,0 +1,18 @@
+Commands:
+uptime
+top
+htop
+ps aux --sort=-%cpu | head
+top -H -p PID
+pgrep
+
+Investigation Flow:
+
+1. Check system load.
+2. Identify top CPU-consuming processes.
+3. Inspect process threads.
+4. Verify whether CPU usage is expected.
+
+Learning:
+High load does not always mean high CPU.
+Always find the process before killing or restarting anything.
