@@ -1,0 +1,24 @@
+Commands:
+systemctl status <service>
+systemctl start <service>
+systemctl stop <service>
+systemctl restart <service>
+journalctl -u <service>
+journalctl -xe
+systemctl list-units --failed
+
+Investigation Flow:
+
+1. Check service status.
+2. Read logs using journalctl.
+3. Identify config or dependency issue.
+4. Fix issue and restart service.
+5. Verify service is active (running).
+
+Learning:
+Most systemd failures are due to:
+
+* Bad config file
+* Missing dependency
+* Port already in use
+* Permission issues

@@ -1,0 +1,10 @@
+systemctl status nginx
+systemctl status <service>
+systemctl start <service>
+systemctl restart <service>
+systemctl enable <service>
+journalctl -u <service>
+journalctl -xe
+systemctl list-units --failed
+ps aux | grep <service>
+ss -tulpn
